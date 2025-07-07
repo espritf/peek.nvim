@@ -16,6 +16,7 @@ const md = new MarkdownIt('default', {
   typographer: true,
   linkify: true,
   langPrefix: 'language-',
+  breaks: true,
   highlight: __args['syntax'] && ((code, language) => {
     if (language && highlight.getLanguage(language)) {
       try {
